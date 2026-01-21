@@ -18,6 +18,7 @@ cd StockMarket
 ### 2. Start MongoDB
 ```bash
 cd backend
+mkdir data
 mongod --dbpath=data
 ```
 Leave this terminal running.
