@@ -44,3 +44,5 @@ temp/
 tmp/
 
 data
+data/
+data/db
