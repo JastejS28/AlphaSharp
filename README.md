@@ -78,26 +78,6 @@ AlphaSharp is a full-stack MERN application that provides real-time stock analys
 
 ---
 
-## 🎬 Demo & Screenshots
-
-### Dashboard
-![Dashboard](https://via.placeholder.com/800x450?text=Dashboard+Screenshot)
-*Real-time market regime detection and watchlist overview*
-
-### Stock Analysis
-![Stock Analysis](https://via.placeholder.com/800x450?text=Stock+Analysis+Screenshot)
-*Comprehensive stock analysis with AI insights*
-
-### Market Overview
-![Market Overview](https://via.placeholder.com/800x450?text=Market+Overview+Screenshot)
-*Historical regime transitions and Monte Carlo forecasts*
-
-### AI Agent
-![AI Agent](https://via.placeholder.com/800x450?text=AI+Agent+Screenshot)
-*Interactive financial assistant with web search*
-
----
-
 ## 🏗️ Tech Stack
 
 ### **Backend** (Node.js/Express)
@@ -322,7 +302,6 @@ See the [detailed structure](#) above for the complete directory layout.
 | GET | `/api/yahoo/quote/:ticker` | Get real-time quote | ❌ |
 | GET | `/api/yahoo/chart/:ticker` | Get historical price data | ❌ |
 
-📘 **For detailed API documentation with examples, see [API_MAPPING.md](./API_MAPPING.md)**
 
 ---
 
@@ -692,6 +671,7 @@ StockMarket/
 - Node.js 18+ and npm
 - MongoDB (local or MongoDB Atlas)
 - Python API URL (default: https://finance-v1-kyu7.onrender.com)
+- Backend AI Github Link(https://github.com/adityachanna/Finance-v1)
 
 ### Backend Setup
 
@@ -747,7 +727,6 @@ cp .env.example .env
 
 Edit `.env` and set:
 - `VITE_API_URL` - http://localhost:5000/api (or your backend URL)
-- `VITE_GOOGLE_CLIENT_ID` - Same as backend Google Client ID
 
 5. **Start development server:**
 ```bash
@@ -756,18 +735,6 @@ npm run dev
 
 Frontend will run on **http://localhost:5173**
 
-### Google OAuth Setup
-
-1. Go to [Google Cloud Console](https://console.cloud.google.com/)
-2. Create a new project or select existing
-3. Enable Google+ API
-4. Create OAuth 2.0 credentials
-5. Add authorized redirect URIs:
-   - http://localhost:5000/api/auth/google/callback (development)
-   - https://your-backend-domain.com/api/auth/google/callback (production)
-6. Add authorized JavaScript origins:
-   - http://localhost:5173 (development)
-   - https://your-frontend-domain.com (production)
 
 ## 🔑 Environment Variables
 
